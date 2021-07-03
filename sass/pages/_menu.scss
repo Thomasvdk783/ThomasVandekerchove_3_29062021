@@ -1,0 +1,192 @@
+/* fichier css des menus */
+
+body{
+    font-family: roboto;
+    margin: auto;
+}
+
+/* header */
+.header-principal-page-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .fa-arrow-left{
+        position: absolute;
+        left: 25px;
+        top: 15px;
+        color: black;
+        cursor: pointer;
+    }
+    .logo-ohmyfood-page-menu{
+    width:150px;
+    }
+}
+/*!!!!!!!! Fin header page menu !!!!!!!!*/
+
+
+/* Slider */
+.slider-principal{
+    width:100%;
+    height: 250px;
+    position:absolute;
+    z-index: 0;
+    .img-slider-principal{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    }
+}
+/* fin */
+
+
+/* Container menu */
+.container-menu{
+    width: 100%;
+    height: 1460px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    position: relative;
+    top: 220px;
+    z-index: 1;
+    .header-menu{
+    padding-top: 15px;
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    .titre-menu{
+        font-size:26px;
+        }
+        .fa-heart{
+            margin-left: 70px;
+        }
+    }
+    .container-section-menu{
+        display: flex;
+        flex-direction:row;
+    }
+}
+
+/* section menu */
+.liste-menu-restaurants{
+    margin-bottom:40px;
+}
+
+.menu-restaurants{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    .sous-titre-menu{
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration-color: #99E2D0;
+        margin-bottom: 5px;
+    }
+    .trait-menu{
+        margin-right: 90%;
+        width: 35px;
+        border-top: 3px solid #99E2D0;
+    }
+    
+    .liste-menu-restaurants{
+        list-style-type: none;
+        padding: 0px;
+        .plat-menu{
+            width: 90%;
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 20px;
+            margin-right: 0px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0px 0px 10px 0px rgb(207, 207, 207);
+            .p-1-menu{
+                font-size:18px;
+                font-weight:bold;
+                margin: 0px;
+            }
+            .infos-plats{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .p-2-menu{
+                font-size:14px;
+                margin: 0px;
+            }
+            
+            .p-3-menu{
+                font-weight: bold;
+                margin: 5px;
+            }
+        }
+        li{
+            margin: 0px;
+        }
+    }
+}
+
+/* button */
+.container-button{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* section Footer */
+.container-footer{
+    width: 100%;
+    background-color:#353535;
+    padding-top: 25px;
+    padding-bottom:30px;
+    position:absolute;
+    z-index: 2;
+    .logo-footer{
+        width:120px;
+        margin-left:15px;
+        color: white;
+    }
+    .list-footer{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom:0px;
+        margin-left: 15px;
+        padding-left: 5px;
+        color: white;
+        .fa-utensils, .fa-hands-helping{
+            width:10px;
+            margin-right: 10px;
+        }
+    }
+    .lien-footer{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+    .p-footer{
+        margin:5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

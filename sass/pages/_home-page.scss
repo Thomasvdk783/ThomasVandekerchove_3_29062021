@@ -1,0 +1,298 @@
+body{
+    font-family: roboto;
+    margin: 0px;
+    margin:auto;
+}
+
+.container-logo{
+    max-width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 15px 5px #000000; 
+    box-shadow: 0px 4px 15px 5px #000000;
+    .logo-ohmyfood{
+        width: 150px;
+    }
+}
+
+.container-address{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(224, 224, 224);
+    box-shadow: inset 0px 0px 5px 1px #adadad, -48px 5px 15px 5px rgba(211,211,211,0);
+    i{
+    margin-right: 15px;
+}
+}
+
+/* Slider principal */
+.container-slider-principal{
+    margin: auto;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    .h1-slider-principal{
+        font-size: 22px;
+    }
+    
+    .p-slider-principal{
+        color: grey;
+    }
+}
+/* !!!!! Fin slider principal !!!! */
+
+/*Début contenu principal */
+main{
+    width:100%;
+}
+
+/* Section Fonctionnement */
+.container-fonctionnement{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    margin-left: 0;
+    .liste-fonctionnement{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        list-style-type: none;
+        font-size: 14px;
+        font-weight: bold;
+        .li-fonctionnement{
+            display: flex; 
+            flex-direction:row;
+            align-items: center;
+            height: 55px;
+            width: 90%;
+            padding-left:30px;
+            padding-right: 30px;
+            margin-bottom: 15px;
+            border-radius:15px;
+            background-color: #f7f7f7;
+            box-shadow: 0px 0px 35px 2px #d8d8d8;
+            &.li-fonctionnement:hover{
+                cursor: pointer;
+                background-color: #bea8da5b;
+            }
+            .fa-list-ul, .fa-mobile-alt, .fa-store{
+                color: $colour-slider-principal;
+                width:15px;
+                margin-right: 35px;
+            }
+            .badge{
+                position:absolute;
+                left: 40px;
+                color: $colour-white;
+                font-weight: 400;
+                background-color: $colour-primary;
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+        
+    }
+}
+
+ul{
+    padding: 0;
+}
+/* !!!! fin section fonctionnement !!!! */
+
+/* section carte restaurants */
+h2 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    width: 96%;
+    &.h2-restaurants{
+        width: 95%;
+        margin-left: 15px;
+    }
+}
+
+.container-restaurants{
+    width: 100%;
+    background-color:rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 0px;
+    .liste-restaurants{
+        list-style-type: none;
+        display: flex;
+        flex-direction:column;
+        .badge-new{
+            position: absolute;
+            color: #5aa793;
+            background-color:#99e2d0;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 7px;
+            padding-right: 7px;
+            font-size: 10px;
+            font-weight:700;
+            border-radius: 2px;
+            margin-top: 10px;
+            left: 280px;
+        }
+        .card-restaurants{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width:85%;
+            margin: auto;
+            margin-bottom: 15px;
+            height: 220px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 2px 8px -2px #616161; 
+            box-shadow: 0px 2px 8px -2px #616161;
+            transition:600ms;
+            &.card-restaurants:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 600ms;
+            }
+        }
+    }
+}
+
+.img-card-restaurants{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 160px;
+    object-fit:cover;
+}
+
+.info-card-restaurants{
+    display: flex;
+    flex-direction: row;
+    .p-card-restaurants{
+        margin-left: 15px;
+        font-weight: bold;
+        width:90%;
+    }
+    .far{
+        font-size:25px;
+    }
+    .fa-heart{
+        margin-left: 25px;
+        margin-right: 15px;
+        margin-top: 15px;
+        color: rgb(167, 167, 167);
+        &:active{
+            background: -webkit-linear-gradient(160deg, $colour-secondary, $colour-primary);
+            font-weight:bold;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:after:active{
+                background: -webkit-linear-gradient(160deg, colour-secondary, $colour-primary);
+            }
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+/* !!!! fin section restaurants !!!!! */
+/* !!!! fin du contenu principal !!!!! */
+
+/* END css mobil first */
+
+@media screen and (min-width:700px){ 
+    body{
+        margin:auto;
+    }
+
+     /* Header principal*/
+    .container-logo{
+        width: 100%;
+        margin: auto;
+    }
+
+    .container-slider-principal {
+        width: 100%;
+    }
+
+    /* Section Fonctionnement */ 
+    .container-fonctionnement{
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        margin-left: 0;
+        .liste-fonctionnement{
+            display:flex;
+            flex-direction: row;
+            width: 60%;
+            .li-fonctionnement{
+                width: 100%;
+                margin: 15px;
+                padding: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+                .fa-list-ul, .fa-mobile-alt, .fa-store{
+                    padding-left:5px;
+                }
+                .badge{
+                    position: sticky;
+                    margin-right: 10px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 2px;
+                    padding-bottom: 0px;
+                }
+            }
+            
+        }
+    }
+    
+    .container-restaurants{
+        width: 100%;
+        .liste-restaurants{
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: auto (2, 1fr);
+            .resto-1{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .resto-2{
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .resto-3{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .resto-4{
+                grid-column:2;
+                grid-row:2;
+            }
+            .badge-new{
+                position: absolute;
+            }
+        }
+    }
+}
+@media screen and (max-width:1440px){ 
+    main {
+        max-width: 1440px;
+    }
+}
