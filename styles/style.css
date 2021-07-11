@@ -202,19 +202,21 @@ h2.h2-restaurants {
   display: flex;
   flex-direction: column;
 }
-.container-restaurants .liste-restaurants .badge-new {
-  position: absolute;
+.container-restaurants .liste-restaurants .badge-new-position {
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute !important;
+  z-index: 5;
+  text-align: right;
+}
+.container-restaurants .liste-restaurants .badge-new-position .badge-new {
   color: #5aa793;
-  background-color: #99e2d0;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 7px;
-  padding-right: 7px;
-  font-size: 10px;
-  font-weight: 700;
-  border-radius: 2px;
-  margin-top: 10px;
-  left: 280px;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 10px !important;
+  margin-top: 10px !important;
 }
 .container-restaurants .liste-restaurants .card-restaurants {
   display: flex;
