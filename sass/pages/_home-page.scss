@@ -136,19 +136,21 @@ h2 {
         list-style-type: none;
         display: flex;
         flex-direction:column;
-        .badge-new{
-            position: absolute;
-            color: #5aa793;
-            background-color:#99e2d0;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            padding-left: 7px;
-            padding-right: 7px;
-            font-size: 10px;
-            font-weight:700;
-            border-radius: 2px;
-            margin-top: 10px;
-            left: 280px;
+        .badge-new-position {
+            width: inherit;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute !important;
+            z-index: 5;
+            text-align: right;
+            & .badge-new {
+                color: #5aa793;
+                background-color:$colour-tertiary;
+                border-radius: 5px;
+                padding:2px;
+                margin-right: 10px !important;
+                margin-top: 10px !important;
+            }
         }
         .card-restaurants{
             display: flex;
