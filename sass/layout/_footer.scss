@@ -33,3 +33,43 @@
         }
     }
 }
+
+
+/* Footer page menu */
+/* section Footer */
+.container-footer{
+    width: 100%;
+    background-color:#353535;
+    padding-top: 25px;
+    padding-bottom:30px;
+    position:absolute;
+    z-index: 2;
+    .logo-footer{
+        width:120px;
+        margin-left:15px;
+        color: white;
+    }
+    .list-footer{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom:0px;
+        margin-left: 15px;
+        padding-left: 5px;
+        color: white;
+        .fa-utensils, .fa-hands-helping{
+            width:10px;
+            margin-right: 10px;
+        }
+    }
+    .lien-footer{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+    .p-footer{
+        margin:5px;
+    }
+}
