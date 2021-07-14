@@ -26,13 +26,13 @@
 
 .plat-menu:hover {
     .slide-left {
+        width: 30px;
         display:block;
         content: transparent;
         background-color: $colour-tertiary;
-        padding-left:19px;
-        padding-right: 19px;
-        padding-bottom: 30px;
-        padding-top: 30px;
+        padding:17px;
+        padding-top:25px;
+        padding-bottom:30px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

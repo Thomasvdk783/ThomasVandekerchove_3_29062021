@@ -107,40 +107,59 @@ body{
             overflow: hidden;
             height: 80px;
             margin-right: 0px;
-            border-radius: 20px;
+            border-radius: 10px;
             margin-bottom: 15px;
             box-shadow: 0px 0px 10px 0px rgb(207, 207, 207);
+            cursor: pointer;
             .contenu-carte-menu{
-                padding-left: 15px;
-                padding-top: 20px;
-                padding-bottom:15px;
-                width: auto;
+                width:auto;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                flex: 1;
                 .p-1-menu{
-                    font-size:18px;
                     width:auto;
-                    font-weight:bold;
-                    margin: 0px;
-                    padding-bottom: 10px;
+                    margin: 0;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin-left: 15px;
                 }          
                 .p-2-menu{
                     width:auto;
-                    font-size:14px;
-                    margin: 0px;
+                    margin: 0;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    margin-left: 15px;
                 }  
             }
+        }
+        .wrapIcon{
+        height: 1.6rem;
+        width: 1.6rem;
+        padding-left: 30px;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
         }
         li{
             margin: 0px;
         }
-        .tarif-plat {
+        .p-3-menu{
+            font-weight: bold;
+            width:auto;
             display: flex;
+            justify-content: flex-end;
             align-items: flex-end;
-            .p-3-menu{
-                font-weight: bold;
-                margin-top: 60px !important;
-                /*margin-left: 100px;*/
-                padding-bottom: 10px;
-            }
+            text-overflow: ellipsis;
+            padding-left: 0.5rem;
+            margin-right: 10px;
+            padding-top: 20px;
         }
     }
 }
