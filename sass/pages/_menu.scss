@@ -172,6 +172,39 @@ body{
     flex-direction: row;
 }
 
+@media screen and (min-width: 700px) {
+    .container-menu{
+        max-width:1340px;
+        margin: auto;
+        height: 2000px;
+        background-color: #f6f6f6;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        position: relative;
+        top: 220px;
+        z-index: 1;
+        .header-menu{
+        padding-top: 15px;
+        width: 100%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        .titre-page-menu{
+            font-size:26px;
+            width:85%;
+            }
+            .fa-heart {
+                font-size:24px;
+            }
+        }
+        .container-section-menu{
+            display: flex;
+            flex-direction:row;
+        }
+    }
+}
+
 
 
 
