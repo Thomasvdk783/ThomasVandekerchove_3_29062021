@@ -69,6 +69,7 @@ main{
         font-weight: bold;
         .li-fonctionnement{
             display: flex; 
+            position: relative;
             flex-direction:row;
             align-items: center;
             height: 55px;
@@ -90,7 +91,7 @@ main{
             }
             .badge{
                 position:absolute;
-                left: 40px;
+                left: -10px;
                 color: $colour-white;
                 font-weight: 400;
                 background-color: $colour-primary;
@@ -155,6 +156,7 @@ h2 {
         .card-restaurants{
             display: flex;
             flex-direction: column;
+            background-color:$colour-white;
             margin-bottom: 20px;
             width:85%;
             margin: auto;
@@ -184,11 +186,22 @@ h2 {
 .info-card-restaurants{
     display: flex;
     flex-direction: row;
-    .p-card-restaurants{
+    justify-content: space-between;
+    .text-card-restaurants {
+        .p1-card-restaurants{
         margin-left: 15px;
-        font-weight: bold;
+        font-weight: 700;
+        margin-top: 5px;
+        margin-bottom:2px;
         width:90%;
+        }
+        .p2-card-restaurant {
+            font-weight: 100;
+            margin-left: 15px;
+            margin-top: 0;
+        }
     }
+    
     .far{
         font-size:25px;
     }
@@ -197,7 +210,9 @@ h2 {
         margin-right: 15px;
         margin-top: 15px;
         color: rgb(167, 167, 167);
-        &:active{
+        transition: all 0.3s;
+        transform:to bottom;
+        &:hover{
             background: -webkit-linear-gradient(160deg, $colour-secondary, $colour-primary);
             font-weight:bold;
             -webkit-background-clip: text;
@@ -223,6 +238,11 @@ a{
         margin:auto;
     }
 
+    .container-principal {
+        max-width: 1340px;
+        margin: auto;
+    }
+
      /* Header principal*/
     .container-logo{
         width: 100%;
@@ -239,6 +259,9 @@ a{
         display: flex;
         flex-direction:column;
         margin-left: 0;
+        & h2{
+            margin-left:25px;
+        }
         .liste-fonctionnement{
             display:flex;
             flex-direction: row;
@@ -252,14 +275,6 @@ a{
                 .fa-list-ul, .fa-mobile-alt, .fa-store{
                     padding-left:5px;
                 }
-                .badge{
-                    position: sticky;
-                    margin-right: 10px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    padding-top: 2px;
-                    padding-bottom: 0px;
-                }
             }
             
         }
@@ -267,32 +282,34 @@ a{
     
     .container-restaurants{
         width: 100%;
+        border-radius: 15px;
+        margin-top:20px;
+        margin-bottom: 40px;
         .liste-restaurants{
             list-style-type: none;
             display: grid;
-            grid-template-columns: auto (2, 1fr);
-            .resto-1{
-                grid-column: 1;
-                grid-row: 1;
-            }
-            .resto-2{
-                grid-column: 2;
-                grid-row: 1;
-            }
-            .resto-3{
-                grid-column: 1;
-                grid-row: 2;
-            }
-            .resto-4{
-                grid-column:2;
-                grid-row:2;
-            }
-            .badge-new{
-                position: absolute;
-            }
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
 }
+
+.crad-restaurants {
+    .badge-new-position {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 5;
+        text-align: right;
+        & .badge-new {
+            color: #5aa793;
+            background-color:$colour-tertiary;
+            border-radius: 5px;
+            padding:2px;
+            margin-right: 10px !important;
+            margin-top: 10px !important;
+        }
+    }
+}
+
 @media screen and (max-width:1440px){ 
     main {
         max-width: 1440px;

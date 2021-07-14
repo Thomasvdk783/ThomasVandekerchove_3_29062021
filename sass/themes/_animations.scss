@@ -6,7 +6,7 @@
     
 .slide-left {
     background-color: $colour-tertiary;
-    padding:25px;
+    padding: 25px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-right: -78px;
@@ -14,34 +14,40 @@
         height: 1.6rem;
         width: 1.6rem;
         font-size: 24px;
-        color:$colour-white;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        color: $colour-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 100px;
         transform: rotate(360deg);
         transition-duration: 0.5s;
     }
 }
 
+.plat-menu .tarif-plat {
+    transition: all 0.4s;
+}
+
 .plat-menu:hover {
     .slide-left {
         width: 30px;
-        display:block;
+        display: block;
         content: transparent;
         background-color: $colour-tertiary;
-        padding:17px;
-        padding-top:25px;
-        padding-bottom:30px;
+        padding: 17px;
+        padding-top: 25px;
+        padding-bottom: 30px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         & .rotate-center {
             transform: rotate(0);
-            }
         }
-    
+    }
+    .tarif-plat {
+        margin-right: 90px;
+    }
 }
 
 @keyframes slide-left {
