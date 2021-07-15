@@ -139,14 +139,6 @@
 }
 
 @media screen and (min-width: 700px) {
-  .container-footer {
-    height: 250px;
-    width: 100%;
-    background-color: #3a3a3a;
-    padding-top: 25px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-  }
   .container-footer .element-footer {
     max-width: 1340px;
     margin: auto;
@@ -159,10 +151,13 @@
   .container-footer .element-footer .list-footer {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 15px;
     margin-bottom: 0px;
     margin-left: 15px;
+    height: 28px;
+    gap: 60px;
+    padding-left: 5px;
     color: white;
   }
   .container-footer .element-footer .list-footer .lien-footer {
@@ -176,6 +171,44 @@
   }
   .container-footer .element-footer .list-footer .lien-footer .p-footer {
     margin: 0px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container-footer {
+    width: 100%;
+    background-color: #353535;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    position: absolute;
+    z-index: 2;
+  }
+  .container-footer .logo-footer {
+    width: 120px;
+    margin-left: 15px;
+    color: white;
+  }
+  .container-footer .list-footer {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    padding-left: 5px;
+    color: white;
+  }
+  .container-footer .list-footer .fa-utensils, .container-footer .list-footer .fa-hands-helping {
+    width: 10px;
+    margin-right: 10px;
+  }
+  .container-footer .lien-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .container-footer .p-footer {
+    margin: 5px;
   }
 }
 .btn-slider-principal {
@@ -687,7 +720,7 @@ body {
   .container-menu {
     max-width: 1340px;
     margin: auto;
-    height: 2000px;
+    height: 800px;
     background-color: #f6f6f6;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
