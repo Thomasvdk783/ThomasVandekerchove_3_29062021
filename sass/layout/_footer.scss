@@ -1,7 +1,6 @@
 /* Footer */
 .container-footer{
     height: 250px;
-    width: 100%;
     background-color:rgb(58, 58, 58);
     padding-top: 25px;
     padding-bottom:30px;
@@ -19,17 +18,18 @@
             margin-top: 15px;
             margin-bottom:0px;
             margin-left: 15px;
-            color: white;
+            color: $colour-white;
             .lien-footer{
                 display: flex;
                 flex-direction:row;
                 align-items: center;
+                color: $colour-white;
                 .fa-utensils, .fa-hands-helping{
                     width:10px;
                     margin-right: 15px;
                 }
                 .p-footer{
-                    margin:0px;
+                    margin: 0px !important;
                 }   
             }
     }
@@ -40,6 +40,7 @@
 
 /* Footer page menu */
 /* section Footer */
+/*
 .container-footer{
     width: 100%;
     background-color:#353535;
@@ -75,7 +76,7 @@
     .p-footer{
         margin:5px;
     }
-}
+}*/
 
 @media screen and (min-width:700px){ 
     .container-footer{
@@ -114,7 +115,7 @@
         }
     }
 }
-
+/*
 @media screen and (min-width:700px) {
     .container-footer{
         width: 100%;
@@ -153,3 +154,4 @@
         }
     }
 }
+*/

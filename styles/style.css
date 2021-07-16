@@ -66,7 +66,6 @@
 /* Footer */
 .container-footer {
   height: 250px;
-  width: 100%;
   background-color: #3a3a3a;
   padding-top: 25px;
   padding-bottom: 30px;
@@ -84,60 +83,61 @@
   margin-top: 15px;
   margin-bottom: 0px;
   margin-left: 15px;
-  color: white;
+  color: #fff;
 }
 .container-footer .element-footer .list-footer .lien-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #fff;
 }
 .container-footer .element-footer .list-footer .lien-footer .fa-utensils, .container-footer .element-footer .list-footer .lien-footer .fa-hands-helping {
   width: 10px;
   margin-right: 15px;
 }
 .container-footer .element-footer .list-footer .lien-footer .p-footer {
-  margin: 0px;
+  margin: 0px !important;
 }
 
 /* Footer page menu */
 /* section Footer */
-.container-footer {
-  width: 100%;
-  background-color: #353535;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  position: absolute;
-  z-index: 2;
-}
-.container-footer .logo-footer {
-  width: 120px;
-  margin-left: 15px;
-  color: white;
-}
-.container-footer .list-footer {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  margin-left: 15px;
-  padding-left: 5px;
-  color: white;
-}
-.container-footer .list-footer .fa-utensils, .container-footer .list-footer .fa-hands-helping {
-  width: 10px;
-  margin-right: 10px;
-}
-.container-footer .lien-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.container-footer .p-footer {
-  margin: 5px;
-}
-
+/*
+.container-footer{
+    width: 100%;
+    background-color:#353535;
+    padding-top: 25px;
+    padding-bottom:30px;
+    position:absolute;
+    z-index: 2;
+    .logo-footer{
+        width:120px;
+        margin-left:15px;
+        color: white;
+    }
+    .list-footer{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom:0px;
+        margin-left: 15px;
+        padding-left: 5px;
+        color: white;
+        .fa-utensils, .fa-hands-helping{
+            width:10px;
+            margin-right: 10px;
+        }
+    }
+    .lien-footer{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+    .p-footer{
+        margin:5px;
+    }
+}*/
 @media screen and (min-width: 700px) {
   .container-footer .element-footer {
     max-width: 1340px;
@@ -173,44 +173,46 @@
     margin: 0px;
   }
 }
-@media screen and (min-width: 700px) {
-  .container-footer {
-    width: 100%;
-    background-color: #353535;
-    padding-top: 25px;
-    padding-bottom: 30px;
-    position: absolute;
-    z-index: 2;
-  }
-  .container-footer .logo-footer {
-    width: 120px;
-    margin-left: 15px;
-    color: white;
-  }
-  .container-footer .list-footer {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    margin-top: 15px;
-    margin-bottom: 0px;
-    margin-left: 15px;
-    padding-left: 5px;
-    color: white;
-  }
-  .container-footer .list-footer .fa-utensils, .container-footer .list-footer .fa-hands-helping {
-    width: 10px;
-    margin-right: 10px;
-  }
-  .container-footer .lien-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .container-footer .p-footer {
-    margin: 5px;
-  }
+/*
+@media screen and (min-width:700px) {
+    .container-footer{
+        width: 100%;
+        background-color:#353535;
+        padding-top: 25px;
+        padding-bottom:30px;
+        position:absolute;
+        z-index: 2;
+        .logo-footer{
+            width:120px;
+            margin-left:15px;
+            color: white;
+        }
+        .list-footer{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            margin-top: 15px;
+            margin-bottom:0px;
+            margin-left: 15px;
+            padding-left: 5px;
+            color: white;
+            .fa-utensils, .fa-hands-helping{
+                width:10px;
+                margin-right: 10px;
+            }
+        }
+        .lien-footer{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+        }
+        .p-footer{
+            margin:5px;
+        }
+    }
 }
+*/
 .btn-slider-principal {
   border-radius: 25px;
   border: none;
@@ -246,7 +248,7 @@ body {
 }
 
 .container-logo {
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -274,6 +276,7 @@ body {
 
 /* Slider principal */
 .container-slider-principal {
+  width: 100%;
   margin: auto;
   background-color: #f7f7f7;
   text-align: center;
@@ -351,17 +354,16 @@ ul {
 /* !!!! fin section fonctionnement !!!! */
 /* section carte restaurants */
 h2 {
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
-  width: 96%;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 h2.h2-restaurants {
-  width: 95%;
-  margin-left: 15px;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .container-restaurants {
@@ -379,15 +381,15 @@ h2.h2-restaurants {
   flex-direction: column;
 }
 .container-restaurants .liste-restaurants .badge-new-position {
-  width: inherit;
   display: flex;
   justify-content: flex-end;
-  position: absolute !important;
+  position: relative !important;
   z-index: 5;
   text-align: right;
 }
 .container-restaurants .liste-restaurants .badge-new-position .badge-new {
   color: #5aa793;
+  position: absolute;
   background-color: #99E2D0;
   border-radius: 5px;
   padding: 2px;
@@ -399,7 +401,7 @@ h2.h2-restaurants {
   flex-direction: column;
   background-color: #fff;
   margin-bottom: 20px;
-  width: 85%;
+  width: 90%;
   margin: auto;
   margin-bottom: 15px;
   height: 220px;
@@ -412,6 +414,7 @@ h2.h2-restaurants {
   cursor: pointer;
   transform: scale(1.05);
   transition: 600ms;
+  height: auto;
 }
 
 .img-card-restaurants {
@@ -462,7 +465,7 @@ h2.h2-restaurants {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 /* !!!! fin section restaurants !!!!! */
@@ -495,8 +498,60 @@ a {
     flex-direction: column;
     margin-left: 0;
   }
-  .container-fonctionnement h2 {
-    margin-left: 25px;
+  .container-fonctionnement .liste-fonctionnement {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+  }
+  .container-fonctionnement .liste-fonctionnement .li-fonctionnement {
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container-fonctionnement .liste-fonctionnement .li-fonctionnement .fa-list-ul, .container-fonctionnement .liste-fonctionnement .li-fonctionnement .fa-mobile-alt, .container-fonctionnement .liste-fonctionnement .li-fonctionnement .fa-store {
+    padding-left: 5px;
+  }
+
+  .container-restaurants {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .container-restaurants .liste-restaurants {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    margin: auto;
+  }
+
+  .container-principal {
+    max-width: 1340px;
+    margin: auto;
+  }
+
+  /* Header principal*/
+  .container-logo {
+    width: 100%;
+    margin: auto;
+  }
+
+  .container-slider-principal {
+    width: 100%;
+  }
+
+  /* Section Fonctionnement */
+  .container-fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
   }
   .container-fonctionnement .liste-fonctionnement {
     display: flex;
@@ -524,26 +579,6 @@ a {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-.crad-restaurants .badge-new-position {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 5;
-  text-align: right;
-}
-.crad-restaurants .badge-new-position .badge-new {
-  color: #5aa793;
-  background-color: #99E2D0;
-  border-radius: 5px;
-  padding: 2px;
-  margin-right: 10px !important;
-  margin-top: 10px !important;
-}
-
-@media screen and (max-width: 1440px) {
-  main {
-    max-width: 1440px;
   }
 }
 /* fichier css des menus */
