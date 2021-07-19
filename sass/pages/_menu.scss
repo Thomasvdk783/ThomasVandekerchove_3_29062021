@@ -45,7 +45,6 @@ body{
 /* Container menu */
 .container-menu{
     width: 100%;
-    height: 1600px;
     background-color: #f6f6f6;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
@@ -54,8 +53,7 @@ body{
     z-index: 1;
     .header-menu{
     padding-top: 15px;
-    width: 100%;
-    margin-left: 15px;
+    width: 95%;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -65,6 +63,12 @@ body{
         }
         .fa-heart {
             font-size:24px;
+            &:hover{
+                background: -webkit-linear-gradient(160deg, $colour-secondary, $colour-primary);
+                font-weight:bold;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                }
         }
     }
     .container-section-menu{
@@ -73,13 +77,31 @@ body{
     }
 }
 
+/* Hauteur des meus */
+
+.menu-la-note{
+    height: 1400px;
+}
+
+.menu-a-la-francaise {
+    height: 1300px;
+}
+
+.menu-la-palette {
+    height: 1300px;
+}
+
+.menu-le-delice {
+    height: 1300px;
+}
+
+
 /* section menu */
 .liste-menu-restaurants{
     margin-bottom:40px;
 }
 
 .menu-restaurants{
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     .sous-titre-menu{
@@ -176,7 +198,7 @@ body{
     .container-menu{
         max-width:1340px;
         margin: auto;
-        height: 800px;
+        height: 1000px;
         background-color: #f6f6f6;
         border-top-left-radius: 35px;
         border-top-right-radius: 35px;
@@ -185,7 +207,7 @@ body{
         z-index: 1;
         .header-menu{
         padding-top: 15px;
-        width: 100%;
+        width: 90%;
         margin-left: 15px;
         display: flex;
         flex-direction: row;
@@ -199,13 +221,46 @@ body{
             }
         }
         .container-section-menu{
-            display: flex;
-            flex-direction:row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
 
-
+@media screen and (min-width:1000px) {
+    .container-menu{
+        max-width:1140px;
+        width: auto;
+        margin: auto;
+        height: 600px;
+        background-color: #f6f6f6;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        position: relative;
+        top: 220px;
+        z-index: 1;
+        .header-menu{
+        padding-top: 15px;
+        width: 95%;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        .titre-page-menu{
+            font-size:26px;
+            width:90%;
+            margin: 10px;
+            }
+            .fa-heart {
+                font-size:24px;
+            }
+        }
+        .container-section-menu{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
 
 
 
