@@ -107,13 +107,18 @@ body{
     .sous-titre-menu{
         font-size: 18px;
         font-weight: 400;
-        text-decoration-color: #99E2D0;
         margin-bottom: 5px;
-    }
-    .trait-menu{
-        margin-right: 90%;
-        width: 35px;
-        border-top: 3px solid #99E2D0;
+        position: relative;
+        padding-bottom: 10px;
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 0.25rem;
+            background-color: $colour-tertiary;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
     }
     
     .liste-menu-restaurants{
@@ -207,14 +212,15 @@ body{
         z-index: 1;
         .header-menu{
         padding-top: 15px;
-        width: 90%;
+        width: 95%;
         margin-left: 15px;
         display: flex;
         flex-direction: row;
         align-items:center;
         .titre-page-menu{
             font-size:26px;
-            width:85%;
+            width:90%;
+            margin-left:0px;
             }
             .fa-heart {
                 font-size:24px;
@@ -229,7 +235,7 @@ body{
 
 @media screen and (min-width:1000px) {
     .container-menu{
-        max-width:1140px;
+        max-width:1340px;
         width: auto;
         margin: auto;
         height: 600px;

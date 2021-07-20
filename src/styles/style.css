@@ -534,7 +534,6 @@ h2.h2-restaurants {
 .info-card-restaurants .fa-heart:hover {
   background: -webkit-linear-gradient(160deg, #FF79DA, #9356DC);
   font-weight: bold;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .info-card-restaurants .fa-heart:hover:after:active {
@@ -764,13 +763,18 @@ body {
 .menu-restaurants .sous-titre-menu {
   font-size: 18px;
   font-weight: 400;
-  text-decoration-color: #99E2D0;
   margin-bottom: 5px;
+  position: relative;
+  padding-bottom: 10px;
 }
-.menu-restaurants .trait-menu {
-  margin-right: 90%;
-  width: 35px;
-  border-top: 3px solid #99E2D0;
+.menu-restaurants .sous-titre-menu::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .menu-restaurants .liste-menu-restaurants {
   list-style-type: none;
@@ -863,7 +867,7 @@ body {
   }
   .container-menu .header-menu {
     padding-top: 15px;
-    width: 90%;
+    width: 95%;
     margin-left: 15px;
     display: flex;
     flex-direction: row;
@@ -871,7 +875,8 @@ body {
   }
   .container-menu .header-menu .titre-page-menu {
     font-size: 26px;
-    width: 85%;
+    width: 90%;
+    margin-left: 0px;
   }
   .container-menu .header-menu .fa-heart {
     font-size: 24px;
@@ -883,7 +888,7 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .container-menu {
-    max-width: 1140px;
+    max-width: 1340px;
     width: auto;
     margin: auto;
     height: 600px;
@@ -973,49 +978,66 @@ body {
   }
 }
 /* Fade in */
-.vignets {
-  animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  /* Firefox */
-  -webkit-animation: fadein 3s;
-  /* Safari et Chrome */
-  -o-animation: fadein 3s;
-  /* Opera */
+.vignets-1 {
+  animation: fadein 3000ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-2 {
+  animation: fadein 3400ms;
+}
+
+.vignets-3 {
+  animation: fadein 3800ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-4 {
+  animation: fadein 4000ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-5 {
+  animation: fadein 4400ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-6 {
+  animation: fadein 4800ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-7 {
+  animation: fadein 5000ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-8 {
+  animation: fadein 5400ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
+.vignets-9 {
+  animation: fadein 5800ms;
+  animation-iteration-count: 1;
+  transition-property: all;
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* sur Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* sur Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+    transform: translateY(0px);
   }
 }
 

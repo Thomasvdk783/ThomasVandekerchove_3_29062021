@@ -62,42 +62,66 @@
   
 /* Fade in */
 
-.vignets {
-    
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari et Chrome */
-    -o-animation: fadein 3s; /* Opera */
+.vignets-1 {
+    animation: fadein 3000ms;
+    animation-iteration-count: 1;
+    transition-property: all;
 }
+
+.vignets-2 {
+    animation: fadein 3400ms;
+    
+}
+
+.vignets-3 {
+    animation: fadein 3800ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+.vignets-4 {
+    animation: fadein 4000ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+.vignets-5 {
+    animation: fadein 4400ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+.vignets-6 {
+    animation: fadein 4800ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+.vignets-7 {
+    animation: fadein 5000ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+.vignets-8 {
+    animation: fadein 5400ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
+.vignets-9 {
+    animation: fadein 5800ms;
+    animation-iteration-count: 1;
+    transition-property: all;
+}
+
 @keyframes fadein {
     from {
         opacity:0;
+        transform:translateY(100px);
     }
     to {
         opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* sur Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* sur Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
+        transform:translateY(0px);
     }
 }
