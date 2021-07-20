@@ -1030,6 +1030,12 @@ body {
   transition-property: all;
 }
 
+.vignets-10 {
+  animation: fadein 6000ms;
+  animation-iteration-count: 1;
+  transition-property: all;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
