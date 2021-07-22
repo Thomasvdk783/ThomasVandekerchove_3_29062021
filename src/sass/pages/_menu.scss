@@ -63,9 +63,12 @@ body{
         }
         .fa-heart {
             font-size:24px;
+            transition: 600ms;
             &:hover{
+                animation-name: heartcolor;
                 background: -webkit-linear-gradient(160deg, $colour-secondary, $colour-primary);
                 font-weight:bold;
+                transition: 600ms;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 }
@@ -74,6 +77,16 @@ body{
     .container-section-menu{
         display: flex;
         flex-direction:column;
+    }
+}
+
+@keyframes heartcolor {
+    0% {
+        background: $colour-white;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(160deg, $colour-secondary, $colour-primary);
     }
 }
 
@@ -125,7 +138,7 @@ body{
         list-style-type: none;
         padding: 0px;
         .plat-menu{
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content:space-between;

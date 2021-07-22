@@ -96,7 +96,8 @@
   margin-right: 15px;
 }
 .container-footer .element-footer .list-footer .lien-footer .p-footer {
-  margin: 0px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 @media screen and (min-width: 700px) {
@@ -132,6 +133,8 @@
   }
   .container-footer .element-footer .list-footer .lien-footer .p-footer {
     margin: 0px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 /* Footer page menu */
@@ -171,6 +174,8 @@
 }
 .footer-menu .element-footer .list-footer .lien-footer .p-footer {
   margin: 0px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 @media screen and (min-width: 700px) {
@@ -211,6 +216,8 @@
   }
   .footer-menu .element-footer .list-footer .lien-footer .p-footer {
     margin: 0px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 /* section Footer */
@@ -366,6 +373,8 @@ body {
 }
 .container-slider-principal .p-slider-principal {
   color: grey;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* !!!!! Fin slider principal !!!! */
@@ -403,10 +412,12 @@ main {
   border-radius: 15px;
   background-color: #f7f7f7;
   box-shadow: 0px 0px 35px 2px #d8d8d8;
+  transition: 600ms;
 }
 .container-fonctionnement .liste-fonctionnement .li-fonctionnement.li-fonctionnement:hover {
   cursor: pointer;
   background-color: #bea8da5b;
+  transition: 600ms;
 }
 .container-fonctionnement .liste-fonctionnement .li-fonctionnement .fa-list-ul, .container-fonctionnement .liste-fonctionnement .li-fonctionnement .fa-mobile-alt, .container-fonctionnement .liste-fonctionnement .li-fonctionnement .fa-store {
   color: #808080;
@@ -470,7 +481,10 @@ h2.h2-restaurants {
   position: absolute;
   background-color: #99E2D0;
   border-radius: 5px;
-  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-right: 10px !important;
   margin-top: 10px !important;
 }
@@ -534,6 +548,7 @@ h2.h2-restaurants {
 .info-card-restaurants .fa-heart:hover {
   background: -webkit-linear-gradient(160deg, #FF79DA, #9356DC);
   font-weight: bold;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .info-card-restaurants .fa-heart:hover:after:active {
@@ -722,10 +737,13 @@ body {
 }
 .container-menu .header-menu .fa-heart {
   font-size: 24px;
+  transition: 600ms;
 }
 .container-menu .header-menu .fa-heart:hover {
+  animation-name: heartcolor;
   background: -webkit-linear-gradient(160deg, #FF79DA, #9356DC);
   font-weight: bold;
+  transition: 600ms;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -734,6 +752,14 @@ body {
   flex-direction: column;
 }
 
+@keyframes heartcolor {
+  0% {
+    background: #fff;
+  }
+  100% {
+    background: -webkit-linear-gradient(160deg, #FF79DA, #9356DC);
+  }
+}
 /* Hauteur des meus */
 .menu-la-note {
   height: 1400px;
@@ -781,7 +807,7 @@ body {
   padding: 0px;
 }
 .menu-restaurants .liste-menu-restaurants .plat-menu {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
