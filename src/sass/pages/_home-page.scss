@@ -63,9 +63,11 @@ main{
     flex-direction:column;
     margin-left: 0;
     .liste-fonctionnement{
+        width: 80%;
         display:flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin: auto;
         list-style-type: none;
         font-size: 14px;
@@ -271,7 +273,7 @@ a{
         .liste-fonctionnement{
             display:flex;
             flex-direction: row;
-            width: 60%;
+            width: 85%;
             .li-fonctionnement{
                 width: 100%;
                 margin: 15px;
@@ -329,7 +331,7 @@ a{
         .liste-fonctionnement{
             display:flex;
             flex-direction: row;
-            width: 60%;
+            width: 85%;
             .li-fonctionnement{
                 width: 100%;
                 margin: 15px;
