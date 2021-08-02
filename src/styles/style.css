@@ -474,6 +474,7 @@ h2.h2-restaurants {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .container-restaurants .liste-restaurants .badge-new-position {
   display: flex;
@@ -548,19 +549,28 @@ h2.h2-restaurants {
   margin-right: 15px;
   margin-top: 15px;
   color: #a7a7a7;
-  transition: all 0.3s;
-  transform: to bottom;
+  transition: all 1s;
 }
 .info-card-restaurants .fa-heart:hover {
-  background: -webkit-linear-gradient(160deg, #FF79DA, #9356DC);
+  animation-name: shake;
+  background: linear-gradient(160deg, #FF79DA, #9356DC);
   font-weight: bold;
+  transition: all 1s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.info-card-restaurants .fa-heart:hover:after:active {
-  background: -webkit-linear-gradient(160deg, colour-secondary, #9356DC);
-}
 
+@keyframes shake {
+  0% {
+    background: linear-gradient(160deg, #FF79DA, #9356DC);
+  }
+  25% {
+    background: linear-gradient(160deg, #FF79DA, #9356DC);
+  }
+  100% {
+    background: linear-gradient(160deg, #FF79DA, #9356DC);
+  }
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -984,7 +994,6 @@ body {
 .plat-menu:hover .slide-left {
   width: 30px;
   display: block;
-  content: transparent;
   background-color: #99E2D0;
   padding: 17px;
   padding-top: 25px;
